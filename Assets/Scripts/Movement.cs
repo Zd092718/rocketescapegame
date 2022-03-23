@@ -5,12 +5,15 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
+    AudioSource boostSource;
     public float thrustSpeed = 500f;
     public float rotationSpeed = 200f;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        boostSource = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
@@ -25,6 +28,15 @@ public class Movement : MonoBehaviour
         if(Input.GetKey(KeyCode.Space))
         {
             rb.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
+
+            if(!boostSource.isPlaying)
+            {
+                boostSource.Play();
+            } 
+        }
+        else 
+        {
+            boostSource.Stop();
         }
     }
     void ProcessRotation()
