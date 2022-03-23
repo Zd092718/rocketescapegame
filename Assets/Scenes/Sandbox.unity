@@ -422,7 +422,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 438042616, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_Drag
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 438042616, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_Constraints
