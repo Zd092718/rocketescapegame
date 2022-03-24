@@ -2,23 +2,37 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] float loadDelay = 1f;
     void OnCollisionEnter(Collision other) 
     {
+
         switch(other.gameObject.tag)
         {
             case "Friendly":
                 print("Hit friendly target");
                 break;
             case "Finish":
-                LoadNextLevel();
+                SuccessSequence(loadDelay);
                 break;
             default:
-                ReloadScene();
+                CrashSequence(loadDelay);
                 break;
         }
     }
 
-    void ReloadScene()
+    
+    void CrashSequence(float delayTime)
+    {
+        GetComponent<Movement>().enabled = false;
+        Invoke("ReloadLevel", delayTime);
+    }
+
+    void SuccessSequence(float delayTime)
+    {
+        GetComponent<Movement>().enabled = false;
+        Invoke("LoadNextLevel", delayTime);
+    }
+    void ReloadLevel()
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
@@ -34,5 +48,4 @@ public class CollisionHandler : MonoBehaviour
         }
         SceneManager.LoadScene(nextSceneIndex);
     }
-    
 }
