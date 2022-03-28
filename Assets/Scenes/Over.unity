@@ -420,10 +420,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1562369556, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: loadDelay
-      value: 3
+    - target: {fileID: 438042611, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: mainEngine
+      value: 
+      objectReference: {fileID: 8300000, guid: db9cd63c882834248ae52ae5e26fd66d, type: 3}
+    - target: {fileID: 973561058, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: m_Volume
+      value: 0.468
       objectReference: {fileID: 0}
+    - target: {fileID: 973561058, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1562369556, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: crashNoise
+      value: 
+      objectReference: {fileID: 8300000, guid: b8898c74bf798a2458339085c5d03009, type: 3}
+    - target: {fileID: 1562369556, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: successNoise
+      value: 
+      objectReference: {fileID: 8300000, guid: 1da6cca37b83cde49b2889b899d180d2, type: 3}
     - target: {fileID: 2849790531429748296, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_RootOrder
       value: 5

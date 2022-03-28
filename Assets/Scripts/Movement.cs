@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] float thrustSpeed = 500f;
+    [SerializeField] float rotationSpeed = 200f;
+    [SerializeField] AudioClip mainEngine;
     Rigidbody rb;
     AudioSource boostSource;
-    public float thrustSpeed = 500f;
-    public float rotationSpeed = 200f;
-    // Start is called before the first frame update
+
+    
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -16,7 +19,7 @@ public class Movement : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         ProcessThrust();
@@ -31,7 +34,7 @@ public class Movement : MonoBehaviour
 
             if(!boostSource.isPlaying)
             {
-                boostSource.Play();
+                boostSource.PlayOneShot(mainEngine);
             } 
         }
         else 
