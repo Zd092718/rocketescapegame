@@ -422,7 +422,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1562369556, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: loadDelay
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2849790531429748296, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_RootOrder

@@ -8,6 +8,9 @@ public class CollisionHandler : MonoBehaviour
 
         switch(other.gameObject.tag)
         {
+            case "Friendly":
+                print("Hit friendly target");
+                break;
             case "Finish":
                 SuccessSequence(loadDelay);
                 break;
