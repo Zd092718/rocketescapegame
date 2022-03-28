@@ -167,9 +167,9 @@ MonoBehaviour:
   thrustSpeed: 500
   rotationSpeed: 200
   mainEngine: {fileID: 8300000, guid: db9cd63c882834248ae52ae5e26fd66d, type: 3}
-  mainEngineParticles: {fileID: 0}
-  leftThrusterParticles: {fileID: 0}
-  rightThrusterParticles: {fileID: 0}
+  mainEngineParticles: {fileID: 3623200653408404747}
+  leftThrusterParticles: {fileID: 4875914006883518228}
+  rightThrusterParticles: {fileID: 4107406829034750058}
 --- !u!82 &973561058
 AudioSource:
   m_ObjectHideFlags: 0
@@ -763,6 +763,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4940884351362868, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
   m_PrefabInstance: {fileID: 3528563993729542263}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &3623200653408404747 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198100719057022332, guid: a3553fd250eb92d4091bebde350c6739, type: 3}
+  m_PrefabInstance: {fileID: 3528563993729542263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3539058203463769608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -835,6 +840,11 @@ PrefabInstance:
 --- !u!4 &4300434649330895394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 3539058203463769608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4107406829034750058 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
   m_PrefabInstance: {fileID: 3539058203463769608}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5149386355430429288
@@ -969,6 +979,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+--- !u!198 &4875914006883518228 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 584678573886053986, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
+  m_PrefabInstance: {fileID: 5455983285755074934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4685150764985994588 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 771087676723270698, guid: d4b06ebeeaf0ac044aeed997d98443c2, type: 3}
