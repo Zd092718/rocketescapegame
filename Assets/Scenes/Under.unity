@@ -360,23 +360,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1562369555 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2849790531429748308, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-  m_PrefabInstance: {fileID: 2849790532174775576}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1562369556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562369555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b70b50ed85b63384cb70eb4a55ee3e6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1944748640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -445,10 +428,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 973561058, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2849790531429748296, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -496,10 +475,6 @@ PrefabInstance:
     - target: {fileID: 2849790531429748308, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_Name
       value: Player (Zoomy)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2849790531429748308, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}

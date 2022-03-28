@@ -180,6 +180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebd154d73d04fb746b89a4fc79ef98bb, type: 3}
+--- !u!198 &577185996 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4875914006883518228, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+  m_PrefabInstance: {fileID: 2849790532174775576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +278,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &820335071 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8553345288176801660, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+  m_PrefabInstance: {fileID: 2849790532174775576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +366,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &1725219237 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5023737335978688886, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+  m_PrefabInstance: {fileID: 2849790532174775576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1895144813 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4107406829034750058, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+  m_PrefabInstance: {fileID: 2849790532174775576}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1933107528 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3623200653408404747, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+  m_PrefabInstance: {fileID: 2849790532174775576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1944748640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -421,25 +446,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 438042611, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: mainEngine
+      propertyPath: mainEngineParticles
       value: 
-      objectReference: {fileID: 8300000, guid: db9cd63c882834248ae52ae5e26fd66d, type: 3}
-    - target: {fileID: 973561058, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: m_Volume
-      value: 0.468
-      objectReference: {fileID: 0}
-    - target: {fileID: 973561058, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: m_audioClip
+      objectReference: {fileID: 1933107528}
+    - target: {fileID: 438042611, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: leftThrusterParticles
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 577185996}
+    - target: {fileID: 438042611, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
+      propertyPath: rightThrusterParticles
+      value: 
+      objectReference: {fileID: 1895144813}
     - target: {fileID: 1562369556, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: crashNoise
+      propertyPath: successParticles
       value: 
-      objectReference: {fileID: 8300000, guid: b8898c74bf798a2458339085c5d03009, type: 3}
+      objectReference: {fileID: 1725219237}
     - target: {fileID: 1562369556, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
-      propertyPath: successNoise
+      propertyPath: explosionParticles
       value: 
-      objectReference: {fileID: 8300000, guid: 1da6cca37b83cde49b2889b899d180d2, type: 3}
+      objectReference: {fileID: 820335071}
     - target: {fileID: 2849790531429748296, guid: d679ef39fe0cdd9468455d5db2482b5e, type: 3}
       propertyPath: m_RootOrder
       value: 5
