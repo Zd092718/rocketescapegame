@@ -1117,11 +1117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5926197554293639243, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.03
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5926197554293639243, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.38
+      value: -8.6
       objectReference: {fileID: 0}
     - target: {fileID: 5926197554293639243, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1749,11 +1749,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5926197554293639243, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.97
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 5926197554293639243, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.69
+      value: 30.79
       objectReference: {fileID: 0}
     - target: {fileID: 5926197554293639243, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1789,6 +1789,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
+--- !u!1 &3952032439237444745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 281515964006731271, guid: 8eab69af0be17224cb504b3afbdb4788, type: 3}
+  m_PrefabInstance: {fileID: 3952032439237444744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3952032439237444746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3952032439237444745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff329ac7a1a3c264e94f3c0dc33e5763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 6, y: -20, z: 0}
+  period: 3
 --- !u!1001 &6506951847193195812
 PrefabInstance:
   m_ObjectHideFlags: 0
