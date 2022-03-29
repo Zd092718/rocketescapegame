@@ -9,15 +9,35 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] ParticleSystem successParticles;
 
     AudioSource playerAudio;
+    BoxCollider playerCollider;
 
     bool isTransitioning = false;
+    bool collisionDisabled = false;
     void Start() 
     {
-        playerAudio = GetComponent<AudioSource>();   
+        playerAudio = GetComponent<AudioSource>();
+        playerCollider = GetComponent<BoxCollider>();
     }
+
+    void Update()
+    {
+        RespondToDebugKeys();
+    }
+    void RespondToDebugKeys()
+    {
+        if(Input.GetKey(KeyCode.L))
+        {
+            LoadNextLevel();
+            
+        } else if(Input.GetKey(KeyCode.C))
+        {
+            collisionDisabled = !collisionDisabled;
+        }
+    }
+    
     void OnCollisionEnter(Collision other) 
     {
-        if(isTransitioning){return;}
+        if(isTransitioning || collisionDisabled){return;}
 
         switch(other.gameObject.tag)
         {
@@ -33,7 +53,7 @@ public class CollisionHandler : MonoBehaviour
         }
     }
 
-    
+
     void CrashSequence(float delayTime)
     {
         isTransitioning = true;
