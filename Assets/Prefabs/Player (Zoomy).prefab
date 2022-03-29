@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 973561058}
   - component: {fileID: 1562369556}
   - component: {fileID: 6936009989948547133}
+  - component: {fileID: 2849790532174775578}
   m_Layer: 0
   m_Name: Player (Zoomy)
   m_TagString: Player
@@ -391,6 +392,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.7370558, y: 1.5150783, z: 1}
   m_Center: {x: 0.0147509575, y: 0.076456346, z: 0}
+--- !u!114 &2849790532174775578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2849790531429748308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5020c5b3a37d8ab498e9ef86211cbece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3672587838184355809
 GameObject:
   m_ObjectHideFlags: 0
